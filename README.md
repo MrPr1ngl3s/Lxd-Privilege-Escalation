@@ -3,13 +3,6 @@
 
 Este script se aprovecha de una deficiente gestión de permisos en el grupo LXD. Esta mala gestión de grupos permite al script realizar acciones indebidas, como manipular contenedores, acceder a recursos del sistema host o realizar modificaciones no autorizadas, violando las restricciones de seguridad establecidas.
 
-<p align="center">
-	<img src="Images/image5.png"
-		alt="Mala_gestión"
-	style="float: left; margin-right: 10px;" />
-</p>
-
-
 # ¿Como funciona?
 
 La ejecución de la herramienta mostrará el siguiente panel de ayuda:
