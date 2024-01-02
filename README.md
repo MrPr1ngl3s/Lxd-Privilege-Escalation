@@ -1,3 +1,11 @@
 
-1 - Uso del script
+
+# ¿Cómo funciona?
+
+
+
+
+# Explicación de la herramient
+
+
 

@@ -24,16 +24,16 @@ function Cleanup(){
 
 function helpPanel(){
 	echo -e "\n[+] Uso: $0"
-	echo -e "\n\t -t Archivo .tar.gz"
+	echo -e "\n\t -f Archivo .tar.gz"
 	echo -e "\n\t -h Panel de ayuda"
 }
 
 
 
 
-declare param=0; while getopts "t:h" arg; do
+declare param=0; while getopts "f:h" arg; do
 	case $arg in
-		t) file=$OPTARG; let param+=1;;
+		f) file=$OPTARG; let param+=1;;
 		h) ;;
 	esac
 done
