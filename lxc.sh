@@ -31,7 +31,7 @@ function helpPanel(){
 
 
 
-declare param=0; while getopts "f:h" arg; do
+declare -i param=0; while getopts "f:h" arg; do
 	case $arg in
 		f) file=$OPTARG; let param+=1;;
 		h) ;;
