@@ -3,7 +3,7 @@
 
 Este script se aprovecha de una deficiente gestión de permisos en el grupo LXD. Esta mala gestión de grupos permite al script realizar acciones indebidas, como manipular contenedores, acceder a recursos del sistema host o realizar modificaciones no autorizadas, violando las restricciones de seguridad establecidas.
 
-# ¿Como funciona?
+# ¿Cómo funciona?
 
 La ejecución de la herramienta mostrará el siguiente panel de ayuda:
 
