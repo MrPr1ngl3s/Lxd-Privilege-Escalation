@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #1. Download https://raw.githubusercontent.com/saghul/lxd-alpine-builder/master/build-alpine (Alpine Image)
-#2. As root user run {bash build-apinme}
+#2. As root user run {bash build-alpine}
 #3. Run script to create the container [Victim Machine]
 #4. Go to /mnt/root and you will see all the resources of the host machine
 
